@@ -39,7 +39,7 @@ async def get_produtos():
 @app.get("/categorias")
 async def get_categorias():
     categorias = categoria_repo.obter_todos()
-    response = templates.TemplateResponse("categoria.html", {"request": {}, "categorias": categorias})
+    response = templates.TemplateResponse("categorias.html", {"request": {}, "categorias": categorias})
     return response
 
 if __name__ == "__main__":

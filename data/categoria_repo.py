@@ -27,10 +27,8 @@ def obter_todos() -> list[Categoria]:
     categorias = [
         Categoria(
             id=tupla[0], 
-            nome=tupla[1], 
+            nome=tupla[1] 
             ) 
             for tupla in tuplas]
     conn.close()
     return categorias
-
-
